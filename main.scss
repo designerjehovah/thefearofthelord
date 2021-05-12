@@ -1,0 +1,588 @@
+// General Settings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./Images/Home_bg.svg) no-repeat center;
+  background-size: cover;
+  font-family: 'poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+// Customization
+
+// Homepage
+
+#home,
+#navigation {
+  transform: translateX(-50%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  .card {
+    width: 1008px;
+    height: 554px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px); /* This will produce the blur */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding-left: 100px;
+    header {
+      nav {
+        .burger {
+          margin-top: 20px;
+          cursor: pointer;
+          svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .body {
+      display: flex;
+      .text {
+        flex: 1;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h1 {
+          font-size: 40px;
+          line-height: 1.2;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          color: white;
+          text-shadow: 2px 2px 3px black;
+        }
+        p {
+          font-size: 14px;
+          text-align: justify;
+          margin-right: 40px;
+        }
+        .button {
+          a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 25px;
+            background: rgba(255, 255, 255, 0.63);
+            border-radius: 25px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          }
+        }
+        .share {
+          display: flex;
+          gap: 10px;
+
+          i {
+            cursor: pointer;
+            background: #c4c4c4;
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .book {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          margin-top: -50px;
+          width: 65%;
+        }
+      }
+    }
+  }
+}
+
+// // About the book
+
+#about_the_book {
+  transform: translateX(-50%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  .card {
+    width: 1008px;
+    height: 554px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px); /* This will produce the blur */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding-left: 100px;
+
+    header {
+      nav {
+        .burger {
+          display: block;
+          margin-top: 20px;
+          cursor: pointer;
+
+          svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .body_book {
+      display: flex;
+      flex-direction: row-reverse;
+      .text_bio {
+        flex: 2;
+        margin-top: 70px;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .title {
+          margin-right: 40px;
+          text-align: right;
+
+          h1 {
+            font-size: 25px;
+            line-height: 1.2;
+            margin-bottom: -10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+          }
+        }
+
+        .summary {
+          p {
+            font-size: 14px;
+            text-align: justify;
+            margin-right: 40px;
+          }
+        }
+
+        .button {
+          display: flex;
+          justify-content: flex-end;
+          gap: 15px;
+          margin-right: 40px;
+          a {
+            font-size: 13px;
+            text-decoration: none;
+            color: black;
+            padding: 10px 25px;
+            background: rgba(255, 255, 255, 0.63);
+            border-radius: 25px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          }
+        }
+        .share {
+          display: flex;
+          gap: 10px;
+
+          i {
+            cursor: pointer;
+            background: #c4c4c4;
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .book_2 {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        svg {
+          margin-top: -50px;
+          width: 100%;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+// About the author
+
+#about_the_author {
+  transform: translateX(-50%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  .card {
+    width: 1008px;
+    height: 554px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px); /* This will produce the blur */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding-left: 100px;
+
+    header {
+      nav {
+        .burger {
+          display: block;
+          margin-top: 20px;
+          cursor: pointer;
+
+          svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .body_author {
+      display: flex;
+      flex-direction: row-reverse;
+      .text_bio {
+        flex: 2;
+        margin-top: 70px;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .title {
+          margin-right: 40px;
+          text-align: right;
+
+          h1 {
+            font-size: 25px;
+            line-height: 1.2;
+            margin-bottom: -10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+          }
+        }
+
+        .biography {
+          p {
+            font-size: 14px;
+            text-align: justify;
+            margin-right: 40px;
+          }
+        }
+
+        .in_touch {
+          border-top: 1px solid #bcbcbc;
+
+          p {
+            margin-top: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 20px;
+          }
+        }
+        .share {
+          margin-top: -20px;
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+
+          i {
+            cursor: pointer;
+            background: #c4c4c4;
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .author {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        svg {
+          width: 80%;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+// Navigation
+#navigation {
+  transform: translateX(50%);
+  opacity: 0;
+  .close {
+    margin-top: 20px;
+    cursor: pointer;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .dropdown_nav {
+    height: 400px;
+    width: 808px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      li {
+        list-style: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Mobile queries
+
+//Homepage
+@media screen and (max-width: 768px) {
+  body {
+    z-index: -5000;
+
+    #home {
+      transform: translateX(-50%);
+      // overflow-x: hidden;
+      .card {
+        width: 100vw;
+        height: 150vh;
+        border-radius: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        overflow: auto;
+        .body {
+          flex-direction: column-reverse;
+          .text {
+            margin-top: -50px;
+
+            h1 {
+              font-size: 30px;
+              text-align: center;
+            }
+            p {
+              margin-right: 0;
+            }
+            .button {
+              text-align: center;
+              // a {
+              //   font-size: 13px;
+              //   padding: 8px 20px;
+              // }
+            }
+            .share {
+              justify-content: center;
+
+              i {
+                background: none;
+              }
+            }
+          }
+          .book {
+            svg {
+              width: 84%;
+            }
+          }
+        }
+      }
+    }
+    #navigation {
+      transform: translateX(50%);
+      opacity: 1;
+      .dropdown_nav {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 80px;
+        ul {
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
+
+// About the book
+@media screen and (max-width: 768px) {
+  body {
+    #about_the_book,
+    #navigation {
+      transform: translateX(-50%);
+      // overflow-x: hidden;
+      .card {
+        width: 100vw;
+        height: 150vh;
+        border-radius: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        overflow: auto;
+        .body_book {
+          flex-direction: column-reverse;
+          margin-top: 40px;
+          .text_bio {
+            margin-top: 0px;
+            margin-right: 0px;
+            .title {
+              margin-right: 0px;
+              text-align: center;
+            }
+            .summary {
+              p {
+                font-size: 16px;
+                margin-right: 0px;
+              }
+            }
+
+            .button {
+              flex-direction: column;
+              margin-right: 0px;
+
+              a {
+                font-size: 16px;
+                text-align: center;
+              }
+            }
+            .share {
+              justify-content: center;
+
+              i {
+                background: none;
+              }
+            }
+          }
+          .book_2 {
+            justify-content: center;
+            svg {
+              width: 62%;
+            }
+          }
+        }
+      }
+    }
+    #navigation {
+      transform: translateX(50%);
+      opacity: 1;
+      .dropdown_nav {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 80px;
+        ul {
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
+
+// About the author
+@media screen and (max-width: 768px) {
+  body {
+    #about_the_author,
+    #navigation {
+      transform: translateX(-50%);
+      // overflow-x: hidden;
+      .card {
+        width: 100vw;
+        height: 150vh;
+        border-radius: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        overflow: auto;
+        .body_author {
+          flex-direction: column-reverse;
+          margin-top: 40px;
+          gap: 30px;
+          .text_bio {
+            margin-top: 0px;
+            margin-right: 0px;
+            .title {
+              margin-right: 0px;
+              text-align: center;
+            }
+            .biography {
+              p {
+                font-size: 16px;
+                margin-right: 0px;
+              }
+            }
+
+            .button {
+              flex-direction: column;
+              margin-right: 0px;
+
+              a {
+                font-size: 16px;
+                text-align: center;
+              }
+            }
+            .share {
+              justify-content: center;
+
+              i {
+                background: none;
+              }
+            }
+          }
+          .author {
+            justify-content: center;
+            svg {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    #navigation {
+      transform: translateX(50%);
+      opacity: 1;
+      .dropdown_nav {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 80px;
+        ul {
+          gap: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,771 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(./Images/Home_bg.svg) no-repeat center;
+  background-size: cover;
+  font-family: 'poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+#home,
+#navigation {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .card,
+#navigation .card {
+  width: 1008px;
+  height: 554px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  /* This will produce the blur */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding-left: 100px;
+}
+
+#home .card header nav .burger,
+#navigation .card header nav .burger {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#home .card header nav .burger svg,
+#navigation .card header nav .burger svg {
+  width: 40px;
+  height: 40px;
+}
+
+#home .card .body,
+#navigation .card .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#home .card .body .text,
+#navigation .card .body .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+#home .card .body .text h1,
+#navigation .card .body .text h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+#home .card .body .text p,
+#navigation .card .body .text p {
+  font-size: 14px;
+  text-align: justify;
+  margin-right: 40px;
+}
+
+#home .card .body .text .button a,
+#navigation .card .body .text .button a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.63);
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#home .card .body .text .share,
+#navigation .card .body .text .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+#home .card .body .text .share i,
+#navigation .card .body .text .share i {
+  cursor: pointer;
+  background: #c4c4c4;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .card .body .book,
+#navigation .card .body .book {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .card .body .book svg,
+#navigation .card .body .book svg {
+  margin-top: -50px;
+  width: 65%;
+}
+
+#about_the_book {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about_the_book .card {
+  width: 1008px;
+  height: 554px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  /* This will produce the blur */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding-left: 100px;
+}
+
+#about_the_book .card header nav .burger {
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#about_the_book .card header nav .burger svg {
+  width: 40px;
+  height: 40px;
+}
+
+#about_the_book .card .body_book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#about_the_book .card .body_book .text_bio {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-top: 70px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+#about_the_book .card .body_book .text_bio .title {
+  margin-right: 40px;
+  text-align: right;
+}
+
+#about_the_book .card .body_book .text_bio .title h1 {
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: -10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+#about_the_book .card .body_book .text_bio .summary p {
+  font-size: 14px;
+  text-align: justify;
+  margin-right: 40px;
+}
+
+#about_the_book .card .body_book .text_bio .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 15px;
+  margin-right: 40px;
+}
+
+#about_the_book .card .body_book .text_bio .button a {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.63);
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#about_the_book .card .body_book .text_bio .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+#about_the_book .card .body_book .text_bio .share i {
+  cursor: pointer;
+  background: #c4c4c4;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about_the_book .card .body_book .book_2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#about_the_book .card .body_book .book_2 svg {
+  margin-top: -50px;
+  width: 100%;
+  height: 400px;
+}
+
+#about_the_author {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about_the_author .card {
+  width: 1008px;
+  height: 554px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  /* This will produce the blur */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding-left: 100px;
+}
+
+#about_the_author .card header nav .burger {
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#about_the_author .card header nav .burger svg {
+  width: 40px;
+  height: 40px;
+}
+
+#about_the_author .card .body_author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#about_the_author .card .body_author .text_bio {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-top: 70px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+#about_the_author .card .body_author .text_bio .title {
+  margin-right: 40px;
+  text-align: right;
+}
+
+#about_the_author .card .body_author .text_bio .title h1 {
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: -10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+#about_the_author .card .body_author .text_bio .biography p {
+  font-size: 14px;
+  text-align: justify;
+  margin-right: 40px;
+}
+
+#about_the_author .card .body_author .text_bio .in_touch {
+  border-top: 1px solid #bcbcbc;
+}
+
+#about_the_author .card .body_author .text_bio .in_touch p {
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+#about_the_author .card .body_author .text_bio .share {
+  margin-top: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+#about_the_author .card .body_author .text_bio .share i {
+  cursor: pointer;
+  background: #c4c4c4;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about_the_author .card .body_author .author {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about_the_author .card .body_author .author svg {
+  width: 80%;
+  height: 400px;
+}
+
+#navigation {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: 0;
+}
+
+#navigation .close {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#navigation .close svg {
+  width: 40px;
+  height: 40px;
+}
+
+#navigation .dropdown_nav {
+  height: 400px;
+  width: 808px;
+  font-size: 30px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navigation .dropdown_nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+#navigation .dropdown_nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+#navigation .dropdown_nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    z-index: -5000;
+  }
+  body #home {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  body #home .card {
+    width: 100vw;
+    height: 150vh;
+    border-radius: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: auto;
+  }
+  body #home .card .body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body #home .card .body .text {
+    margin-top: -50px;
+  }
+  body #home .card .body .text h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  body #home .card .body .text p {
+    margin-right: 0;
+  }
+  body #home .card .body .text .button {
+    text-align: center;
+  }
+  body #home .card .body .text .share {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #home .card .body .text .share i {
+    background: none;
+  }
+  body #home .card .body .book svg {
+    width: 84%;
+  }
+  body #navigation {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    opacity: 1;
+  }
+  body #navigation .dropdown_nav {
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 80px;
+  }
+  body #navigation .dropdown_nav ul {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body #about_the_book,
+  body #navigation {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  body #about_the_book .card,
+  body #navigation .card {
+    width: 100vw;
+    height: 150vh;
+    border-radius: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: auto;
+  }
+  body #about_the_book .card .body_book,
+  body #navigation .card .body_book {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+  body #about_the_book .card .body_book .text_bio,
+  body #navigation .card .body_book .text_bio {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  body #about_the_book .card .body_book .text_bio .title,
+  body #navigation .card .body_book .text_bio .title {
+    margin-right: 0px;
+    text-align: center;
+  }
+  body #about_the_book .card .body_book .text_bio .summary p,
+  body #navigation .card .body_book .text_bio .summary p {
+    font-size: 16px;
+    margin-right: 0px;
+  }
+  body #about_the_book .card .body_book .text_bio .button,
+  body #navigation .card .body_book .text_bio .button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0px;
+  }
+  body #about_the_book .card .body_book .text_bio .button a,
+  body #navigation .card .body_book .text_bio .button a {
+    font-size: 16px;
+    text-align: center;
+  }
+  body #about_the_book .card .body_book .text_bio .share,
+  body #navigation .card .body_book .text_bio .share {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #about_the_book .card .body_book .text_bio .share i,
+  body #navigation .card .body_book .text_bio .share i {
+    background: none;
+  }
+  body #about_the_book .card .body_book .book_2,
+  body #navigation .card .body_book .book_2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #about_the_book .card .body_book .book_2 svg,
+  body #navigation .card .body_book .book_2 svg {
+    width: 62%;
+  }
+  body #navigation {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    opacity: 1;
+  }
+  body #navigation .dropdown_nav {
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 80px;
+  }
+  body #navigation .dropdown_nav ul {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body #about_the_author,
+  body #navigation {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  body #about_the_author .card,
+  body #navigation .card {
+    width: 100vw;
+    height: 150vh;
+    border-radius: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: auto;
+  }
+  body #about_the_author .card .body_author,
+  body #navigation .card .body_author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 40px;
+    gap: 30px;
+  }
+  body #about_the_author .card .body_author .text_bio,
+  body #navigation .card .body_author .text_bio {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  body #about_the_author .card .body_author .text_bio .title,
+  body #navigation .card .body_author .text_bio .title {
+    margin-right: 0px;
+    text-align: center;
+  }
+  body #about_the_author .card .body_author .text_bio .biography p,
+  body #navigation .card .body_author .text_bio .biography p {
+    font-size: 16px;
+    margin-right: 0px;
+  }
+  body #about_the_author .card .body_author .text_bio .button,
+  body #navigation .card .body_author .text_bio .button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0px;
+  }
+  body #about_the_author .card .body_author .text_bio .button a,
+  body #navigation .card .body_author .text_bio .button a {
+    font-size: 16px;
+    text-align: center;
+  }
+  body #about_the_author .card .body_author .text_bio .share,
+  body #navigation .card .body_author .text_bio .share {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #about_the_author .card .body_author .text_bio .share i,
+  body #navigation .card .body_author .text_bio .share i {
+    background: none;
+  }
+  body #about_the_author .card .body_author .author,
+  body #navigation .card .body_author .author {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #about_the_author .card .body_author .author svg,
+  body #navigation .card .body_author .author svg {
+    width: 100%;
+  }
+  body #navigation {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    opacity: 1;
+  }
+  body #navigation .dropdown_nav {
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 80px;
+  }
+  body #navigation .dropdown_nav ul {
+    gap: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
